@@ -1,0 +1,389 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url("/fonts/Gotham-Black.otf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url("/fonts/Gotham-Thin.otf");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url("/fonts/Gotham-Medium.otf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("/fonts/Inter-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    max-width: 100vw;
+    background-color: red;
+    background: url("/images/background.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+   
+}
+
+.header {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header-button, .confeti .btn {
+    padding: 14px 30px;
+    background-color: #108681;
+    border-radius: 10px;
+    font-weight: 900;
+    font-family: "Gotham";
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    max-width: 1280px;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+    gap: 6rem;
+    height: auto;
+}
+
+
+.section-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.section-1 > * {
+    flex: 1 1 0%;
+}
+
+
+/* AREA DE FORMULARIO */
+.form {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+.form h2 {
+    color: #fff;
+    font-size: 3rem;
+    font-family: Gotham;
+}
+
+.form-label {
+    background-color: #0f1a20;
+    border-radius: 10px;
+    border: 1px #fff solid;
+    padding: 16px 22px;
+    display: flex;
+    width: 100%;
+
+}
+
+.form-label-2 {
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    display: block;
+    text-align: start;
+    width: 100%;
+}
+
+.form-label-2 a {
+    text-decoration: double;
+    color: white;
+}
+
+.form-label input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+    color: white;
+}
+
+.form-label input::placeholder {
+    color:white
+}
+
+
+.unete-div  {
+    display: flex;
+    align-items: center;
+
+}
+
+.unete-div span {
+    color: white;
+    font-family: Inter;
+    font-weight: 300;
+    text-align: start;
+}
+
+.form .btn-submit, .section-2 .btn-link {
+    border: 3px solid white;
+    background-color: #108681;
+    color: white;
+    padding: 1.25rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    box-shadow: 0px 0.5rem 1rem 0px black;
+    display: block;
+    width: 100%;
+    font-family: Gotham;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+/* VIDEO INTRODUCTORIO */
+
+.intro {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .video-iframe {
+    border: 2px #fff solid;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 560px;
+    max-height: 315px;
+    aspect-ratio: 16/9;
+}
+
+.intro h3 {
+    color: white;
+    font-family: Gotham;
+    font-weight: 100;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.intro h3 span {
+    font-weight: 900;
+    padding: 6px;
+    background-color: #108681;
+    display: block;
+    font-size: 3rem;
+}
+
+
+/* SECCION DE REGALO */
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+}
+
+.titulo-regalo {
+    color: white;
+    font-family: Gotham;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.titulo-regalo span {
+    padding: 0.25rem;
+    background-color: #108681;
+    display: inline-block;
+    text-align: center;
+}
+
+.section-2 p {
+    font-size: 1.5rem;
+    font-family: Gotham;
+    font-weight: 400;
+    color: white;
+    gap: 2rem;
+
+    text-align: center;
+}
+
+.section-2 img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.section-2 .btn-link {
+    min-width: max-content;
+    max-width: 50%;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+    font-family: Inter;
+    font-weight: 300;
+}
+
+footer .container {
+    max-width: 1280px;
+    margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   flex-wrap: wrap;
+}
+
+footer .container .footer-1 div {
+    display: flex;
+    min-width: max-content;
+    gap: 0.5rem;
+}
+
+footer .container > img {
+    width: 100%;
+}
+
+footer .footer-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer .footer-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer a {
+    color: white;
+}
+
+
+.confeti {
+    background-image: url("/images/confeti.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.confeti .box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.confeti .box .titulo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.confeti .box .titulo img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.confeti .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.confeti .box h2{
+    font-family: Gotham;
+    font-weight: 900;
+    font-size: 3rem;
+    color: white;
+}
+
+.confeti .box h3 {
+    font-family: Gotham;
+    font-weight: 900;
+    font-size: 2rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+
+    .main .section-1 .form {
+        text-align: center;
+        align-items: center;
+    }
+
+    footer .container .footer-1 {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    footer .container .footer-1 div {
+        display: block;
+        width: 100%;
+    }
+
+    .confeti .box .titulo {
+        flex-direction: column;
+    }
+
+    .confeti .box .titulo img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+}
+
