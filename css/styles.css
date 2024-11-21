@@ -86,7 +86,7 @@ body {
 .section-1 {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .section-1 > * {
@@ -246,8 +246,9 @@ body {
 }
 
 .section-2 img {
-    width: 100%;
+    width: 80%;
     border-radius: 0.5rem;
+
 }
 
 .section-2 .btn-link {
